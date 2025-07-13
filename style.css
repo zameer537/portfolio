@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --primery-color: #fffffc;
+    --text-color: #000000;
+    --secondary-color: #48e5c2;
+}
+
+body {
+    background: var(--primery-color);
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background: var(--text-color);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 0px 9px;
+    font-size: 28px;
+    font-weight: 600;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+
+
+
+
+}
+
+.navbar .navlinks a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.menu-icon i {
+    color: var(--text-color);
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    display: none;
+
+}
+
+.navbar .navlinks a:hover,
+.navbar .navlinks a.active {
+    color: var(--primery-color);
+    transition: .5s ease-in-out;
+    outline: none;
+
+}
+
+.home {
+    min-height: 50vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 120px auto;
+    padding: 40px;
+
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fafafa;
+    box-shadow: 27px 27px 100px #c6c6c6,
+        -27px -27px 100px #ffffff;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.home .img img {
+    width: 300px;
+    border-top: 3px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
+    border-radius: 40px;
+    padding: 10px
+}
+
+.home .home-content span {
+    color: var(--secondary-color);
+    font-size: 24px;
+
+}
+
+/* From Uiverse.io by reshades */
+.button {
+    background-color: #ffffff00;
+    color: var(--secondary-color);
+    width: 7.7em;
+    height: 2.8em;
+    border: var(--secondary-color) 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+    margin-top: 10px;
+
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    color: var(--primery-color);
+}
+
+.button svg {
+    width: .8em;
+    height: 1em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+    margin-top: 3px;
+}
+
+
+
+.text {
+    margin: 0 1.5em
+}
+
+#element {
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 27px;
+    text-decoration: none;
+}
+
+.icons i {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .4s;
+
+
+}
+
+.icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.icons i:hover {
+    color: var(--text-color);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+.btn button {
+    margin: 30px 10px;
+}
+
+.about {
+    min-height: 50vh;
+    width: 70%;
+    border-radius: 15px;
+    background: #fafafa;
+    box-shadow: 27px 27px 100px #c6c6c6,
+        -27px -27px 100px #ffffff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about-content h1 {
+    color: var(--secondary-color);
+    font-weight: 500;
+    border-bottom: 1px solid var(--secondary-color);
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.about-content p {
+    color: var(--text-color);
+    font-size: 1em;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.hidden {
+    position: relative;
+    left: -300px;
+}
+
+.skills {
+    min-height: 30vh;
+    background: #fafafa;
+    box-shadow: 27px 27px 100px #c6c6c6,
+        -27px -27px 100px #ffffff;
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+
+.skills-box h1 {
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* From Uiverse.io by Juanes200122 */
+.container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: var(--primery-color);
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 7px;
+
+}
+
+.container .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: var(--primery-color);
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: var(--secondary-color);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.html {
+    /*progreso de las diferentes lenguajes*/
+    width: 90%;
+    animation-delay: 0.1s;
+}
+
+.skill-per.scss {
+    /*progreso de las diferentes lenguajes*/
+    width: 80%;
+    animation-delay: 0.1s;
+}
+
+.skill-per.Boostrap {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+    animation-delay: 0.2s;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: rgb(226, 226, 226);
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: rgb(226, 226, 226);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.projects {
+    min-height: 50vh;
+    width: 90%;
+    border-radius: 15px;
+    background: #fafafa;
+    box-shadow: 27px 27px 100px #c6c6c6,
+        -27px -27px 100px #ffffff;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.projects h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+
+}
+
+.projects .cards {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+
+/* From Uiverse.io by gharsh11032000 */
+.card {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+    width: 300px;
+    fill: var(--primery-color);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.education {
+    min-height: 50vh;
+    width: 90%;
+    border-radius: 15px;
+    background: #fafafa;
+    box-shadow: 27px 27px 100px #c6c6c6,
+        -27px -27px 100px #ffffff;
+    margin: 15px auto;
+    padding: 30px;
+
+}
+
+.education h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.education .edu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: var(--secondary-color);
+    box-shadow: 5px 5px 10px #d9d5d5,
+        -5px -5px 10px #ffffff;
+}
+
+
+.edu-cards .edu-card {
+    text-align: center;
+    color: var(--primery-color);
+    width: 30%;
+    margin-top: 17px;
+    overflow: hidden;
+    height: 180px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 5px 5px 10px var(--primery-color),
+        -5px -5px 10px #ffffff;
+}
+
+.edu-cards .edu-card:hover {
+    color: var(--text-color);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.contact {
+    background: #fffafa;
+    box-shadow: 5px 5px 10px #d9d5d5,
+        -5px -5px 10px #ffffff;
+    min-height: 50vh;
+    width: 90%;
+    border-radius: 15px;
+    margin: auto;
+    padding: 15px;
+}
+.contact h1{
+    text-align: center;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+/* From Uiverse.io by DavidTM96 */ 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding-bottom: 0.4em;
+  background-color: var(--primery-color);
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 50px;
+
+  
+}
+
+.form-heading {
+  text-align: center;
+  margin: 2em;
+
+  font-size: 1.2em;
+  background-color: transparent;
+  align-self: center;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 10px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: var(--primery-color);
+   box-shadow: 5px 5px 10px var(--secondary-color),
+        -5px -5px 10px #ffffff;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: var(--text-color);
+  padding-inline: 1em;
+}
+
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 3em;
+  margin-top: 10px;
+  padding: 1em;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+  background-color: transparent;
+  color: var(--text-color);
+  font-weight: bold;
+  width: 150px;
+  transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color:var(--primery-color);
+  color: #000;
+  cursor: pointer;
+  
+}
+
+.form-card1 {
+  
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.form-card1:hover {
+  box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.form-card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+.footer{
+      width: 8%;
+      min-height: 8vh;
+     background: #fffafa;
+    box-shadow: 5px 5px 10px #ffffff,
+        -5px -5px 10px #ffffff;
+        margin: 20px auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+
+}
+.footer a{
+    text-decoration: none;
+}
+.footer a i{
+    font-size: 40px;
+    color: var(--secondary-color);
+    overflow: hidden;
+}
+.footer a i:hover{
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .3s;
+}

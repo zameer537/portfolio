@@ -1,0 +1,136 @@
+@media (max-width:660px) {
+    .navbar .logo a {
+        font-size: 20px;
+    }
+
+    .navbar .navlinks a {
+        font-size: 15px;
+        color: var(--secondary-color);
+    }
+
+    .menu-icon i {
+        font-size: 30px;
+    }
+     .about{
+        width: 95%;
+     }
+     .education .edu-cards{
+        display: flex;
+        flex-direction: column;
+     }
+    .edu-cards .edu-card{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:590px) {
+    .navbar .logo a {
+        font-size: 22px;
+        font-weight: 400;
+        padding: 0px 9px;
+    }
+
+    .navbar .navlinks a {
+        font-size: 13px;
+        transition: .5s;
+        margin: 0 5px;
+        color: var(--secondary-color);
+
+    }
+    .button{
+       width: 6.9em;
+       
+        
+          
+    }
+.container{
+    width: 100%;
+    overflow: hidden;
+}
+.projects{
+    width: 100%;
+}
+.cards .card{
+    width: 90%;
+    margin-top: 15px;
+}
+.education .edu-cards{
+    display: flex;
+    flex-direction: column;
+}
+   
+}
+
+@media(max-width:490px) {
+    .navbar .navlinks a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 17px;
+        color: var(--secondary-color);
+
+    }
+    .sendMessage-btn{
+        width: 100%;
+    }
+
+    .navbar .navlinks {
+        position: absolute;
+       background: var(--text-color);
+        height: 250px;
+        top: 60.9px;
+        right: 0%;
+        width: 50%;
+        border-radius: 0px;
+        background: var(--text-color);
+        box-shadow: 8px 0px 36px var(--secondary-color),
+            -13px -13px 26px #ffffff;
+        display: none;
+
+    }
+    .navlinks{
+        display: none;
+    }
+
+    .menu-icon i {
+        display: block;
+        color: var(--secondary-color);
+        font-size: 40px;
+        font-weight: 300;
+        
+    }
+    .button{
+        width: 6.9em;
+         
+        
+    }
+    .icons i{
+        display: block;
+    }
+    #element{
+        font-size: 19px;
+        margin-top: 5px;
+    }
+    
+}
+@media(max-width:668px){
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        min-height: 100vh;
+    }
+    .icons {
+        display:flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .about-content p{
+        font-size: .7em;
+    }
+}
